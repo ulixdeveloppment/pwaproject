@@ -1,0 +1,150 @@
+@font-face{
+    font-family: "Oswald-Light";
+    src: url("../assets/fonts/Oswald-Light.ttf");
+}
+@font-face{
+    font-family: "Oswald-ExtraLight";
+    src: url("../assets/fonts/Oswald-ExtraLight.ttf");
+}
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.exercices div{
+    display: flex;
+    justify-content: space-around;
+}
+.formcontener{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.addExoInput{
+    padding: 4%;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    margin: 3%;
+}
+.addExoSubmit{
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    background-color: lightseagreen;
+    margin: 3%;
+    height: 50px;
+}
+.exercices p{
+    max-width: 50%;
+}
+.hzcontainerblock{
+    background-color: #fff;
+    margin: 0 5%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+.nameDiv{
+    width: 50%;
+    text-align: end;   
+}
+.nameDiv p{
+    width: 100%;
+    font-size: 1.5em;
+    font-family: "Oswald",serif;
+}
+.buttonDiv{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonDiv button{
+    background-color: #701903;
+    border-radius: 10px;
+    border:3px solid black;
+    color: #fff;
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+
+}
+.explication{
+    background-color: #f7f3f2;
+    padding: 1% 5%;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    margin: 4% 2%;
+    margin-bottom: 3%;
+
+}
+.explication h1{
+    font-family: "Oswald-Light",serif;
+}
+.explication p{
+    font-family: "Oswald-ExtraLight", serif;
+    text-align: justify;
+}
+.endMenu{
+    background-color: #fff;
+    padding: 2%;
+    -webkit-box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 25px 111px -13px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+}
+.endMenu button{
+    padding: 4%;
+    border-radius: 5px;
+    border:none;
+    
+}
+#action-save{
+    background-color: #7d7877;
+    height: 50px;
+}
+#action-erase{
+    background-color: #701903;
+    height: 50px;
+}
+#action-launch{
+    background-color: #93c29b;
+    float: right;
+    width: 25%;
+    font-size: 1.2em;
+}
+.exercices{
+    margin: 4% 0;
+}
+.setTimes{
+    margin-bottom: 25%;
+}
+.setTimes input{
+    padding: 4%;
+    border-radius: 5px;
+    border:2px solid lightgrey;
+    margin: 2%;
+}
+.line{
+    display: flex;
+    justify-content: space-around;
+}
+.labels, .inputs{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labels{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 8%;
+    font-family: "Oswald", serif;
+}
