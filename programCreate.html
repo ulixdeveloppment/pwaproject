@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>UX design</title>
+    <link rel="stylesheet" href="src/programspage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- pwa -->
+    <link rel="apple-touch-icon" href="assets/icons/icon-96x96.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="white">
+</head>
+<body>
+    <div class="explication">
+        <h1>Construis ton programme</h1>
+        <p>Pour construire ton programme, inscrit le nom des exercices que tu veux puis ajoute les en cliquant sue le bouton, ils s'ajouteront automatiquement a ta liste.</p>
+    </div>
+    <div class="formcontener">
+        <form action="" class="programConfig">
+            <input type="text" class="addExoInput" id="addExoInput" placeholder="Add an exercise here">
+            <input type="button" class="addExoSubmit" onclick="addExercise()" value="Ajouter"> 
+        </form> 
+    </div>
+    <hr>
+    <div class="exercices" id="exos">
+            
+    </div>
+    <hr>
+    <div class="setTimes">
+        <div class="line">
+            <div class="labels">
+                <label for="durate">durée d'exercice(sec)</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="durate" id="durate"><br>
+            </div>
+        </div>
+        <div class="line">
+            <div class="labels">
+                <label for="rep-intE">repos inter-exercices(sec)</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="rep-intE" id="rep-intE"><br>
+            </div>
+        </div>
+        <div class="line">
+            <div class="labels">
+                <label for="reps">nombre de séries</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="reps" id="reps"><br>
+            </div>
+        </div>
+        <div class="line">
+            <div class="labels">
+                <label for="rep-intS">repos inter-series(sec)</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="rep-intS" id="rep-intS"><br>
+            </div>
+        </div> 
+    </div>
+    <div class="endMenu">
+        <button onclick="saveProgram()" id="action-save">
+            Sauvegarder
+        </button>
+        <button onclick="eraseAll()" id="action-erase">
+            Tout effacer
+        </button>
+        <button onclick="launchSession()" id="action-launch">
+            <i class="far fa-play-circle"></i>
+        </button>
+    </div>
+    <script src="pgms.js"></script>
+</body>
+</html>
